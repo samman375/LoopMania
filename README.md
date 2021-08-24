@@ -1,3 +1,4 @@
-# COMP2511 Major Project: Loop Mania
-
-[**Link to specification**](https://gitlab.cse.unsw.edu.au/COMP2511/21T2/project-specification)
+- Project completed as a group of 5 in T2 2021 for COMP2511: Object Oriented Programming.
+- This project had a focus on OOP principles and design patterns, as well as agile software development.
+- Project Spec can be found in spec.md.
+- A final mark of 96/100 was awarded.
