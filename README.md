@@ -1,4 +1,4 @@
 - Project completed as a group of 5 in T2 2021 for COMP2511: Object Oriented Programming.
 - This project had a focus on OOP principles and design patterns, as well as agile software development.
 - Project Spec can be found in spec.md.
-- A final mark of 96/100 was awarded.
+- A final mark of 96/100 was awarded and was worth 35% of grade.
