@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="heroCastleMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="451.0" layoutX="-1.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/brick_wall.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="43.0" layoutY="110.0" prefHeight="211.0" prefWidth="362.0" style="-fx-background-color: white;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="59.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="86.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="10.0" prefWidth="54.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="69.0" minWidth="10.0" prefWidth="58.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="10.0" prefWidth="49.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../../../images/basic_sword.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/helmet.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../images/shield.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../images/armour.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../images/staff.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../images/stake.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../images/brilliant_blue_new.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buyHelmetButton" alignment="CENTER" mnemonicParsing="false" onAction="#buyHelmet" text="Buy" GridPane.columnIndex="2" />
+            <Button fx:id="buyArmourButton" alignment="CENTER" mnemonicParsing="false" onAction="#buyArmour" text="Buy" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="buyShieldButton" alignment="CENTER" mnemonicParsing="false" onAction="#buyShield" text="Buy" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="buyHealthPotionButton" alignment="CENTER" mnemonicParsing="false" onAction="#buyHealthPotion" text="Buy" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="buySwordButton" mnemonicParsing="false" onAction="#buySword" text="Buy" GridPane.columnIndex="5" />
+            <Button fx:id="buyStaffButton" mnemonicParsing="false" onAction="#buyStaff" text="Buy" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="buyStakeButton" mnemonicParsing="false" onAction="#buyStake" text="Buy" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="80.0" text="Helmet&#10;50g" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="79.0" text="Armour&#10;150g" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="79.0" text="Shield&#10;50g" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="83.0" text="Health Potion&#10;50g" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="54.0" text="Sword&#10;50g" textAlignment="CENTER" GridPane.columnIndex="4" />
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="52.0" text="Staff&#10;50g" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="52.0" text="Stake&#10;50g" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="62.0" text="Gold:" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentGold" alignment="CENTER" prefHeight="27.0" prefWidth="55.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="unequippedInventory" gridLinesVisible="true" layoutX="43.0" layoutY="394.0" prefHeight="133.0" prefWidth="141.0" style="-fx-background-color: white;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="93.0" layoutY="14.0" prefHeight="76.0" prefWidth="263.0" text="The Hero's Castle" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="76.0" layoutY="352.0" prefHeight="42.0" prefWidth="94.0" text="Inventory" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="closeButton" layoutX="383.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToGame" text="Close" />
+      <Button fx:id="sellItemsButton" layoutX="285.0" layoutY="450.0" mnemonicParsing="false" onAction="#sellItem" prefHeight="42.0" prefWidth="83.0" text="Sell Item" />
+      <Label layoutX="224.0" layoutY="394.0" prefHeight="25.0" prefWidth="94.0" text="Sell Price:" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="sellPrice" layoutX="318.0" layoutY="389.0" prefHeight="41.0" prefWidth="70.0" text="20" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
