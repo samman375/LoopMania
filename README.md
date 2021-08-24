@@ -2,5 +2,5 @@
 - Task was to create a game application (similar to LoopHero).
 - This project had a focus on OOP principles and design patterns, as well as agile software development.
 - Project Spec can be found in spec.md.
-- Application can be run from the main function in src/unsw/loopmania/view/LoopManiaApplication.java
+- Application can be run from the main method in src/unsw/loopmania/view/LoopManiaApplication.java
 - A final mark of 96/100 was awarded and was worth 35% of grade.
